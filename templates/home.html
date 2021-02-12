@@ -1,0 +1,32 @@
+{% extends "layout2.html" %}
+{% block content %}
+   
+        <article class="media content-section">
+          <div class="media-body">
+          
+            <div class="article-metadata">
+          
+          {% if user["username"] =="german" %}
+              
+              <iframe src="http://localhost:3005/"  width=1300 height=1200 ></iframe>
+          {% endif %}
+
+          {% if user["username"] =="american" %}
+
+              <iframe src="http://localhost:3006/"  width=750 height=1200 ></iframe>
+
+          {% endif %}    
+
+          {% if user["username"] =="taiwan" %}
+              
+              <iframe src="http://localhost:3004/"  width=750 height=1200 ></iframe>
+
+
+          {% endif %}      
+            </div>
+          
+
+          </div>
+        </article>
+   
+{% endblock content %}

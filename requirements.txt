@@ -1,0 +1,14 @@
+Flask
+render_template
+url_for
+flash
+redirect
+session
+pandas
+dash
+plotly
+flask_wtf
+wtforms
+pickle
+sklearn
+

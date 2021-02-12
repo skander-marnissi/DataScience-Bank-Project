@@ -1,0 +1,252 @@
+  
+{% extends "layout2.html" %}
+{% block content %}
+<div class="content-section">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Evaluate client :</legend>
+            <!-- Choices -->
+            <div class="form-group">
+                {{form.limit_bal.label(class="form-control-label")}}
+                {{form.limit_bal(class="form-control form-control-lg")}}
+            </div>
+
+
+            <!-- Intergers -->
+            <div class="form-group">
+                {{ form.sex.label(class="form-control-label") }}
+                {% if form.sex.errors %}
+                    {{ form.sex(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.sex.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.sex(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <!------------------------------------------------------------------------------------------->
+
+            <div class="form-group">
+                {{form.education.label(class="form-control-label")}}
+                {{form.education(class="form-control form-control-lg")}}
+            </div>
+
+            <div class="form-group">
+                {{form.marriage.label(class="form-control-label")}}
+                {{form.marriage(class="form-control form-control-lg")}}
+            </div>
+
+            <div class="form-group">
+                {{ form.age.label(class="form-control-label") }}
+                {% if form.age.errors %}
+                    {{ form.age(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.age.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.age(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{form.pay_1.label(class="form-control-label")}}
+                {{form.pay_1(class="form-control form-control-lg")}}
+            </div>
+
+            <div class="form-group">
+                {{form.pay_2.label(class="form-control-label")}}
+                {{form.pay_2(class="form-control form-control-lg")}}
+            </div>
+
+            <div class="form-group">
+                {{form.pay_3.label(class="form-control-label")}}
+                {{form.pay_3(class="form-control form-control-lg")}}
+            </div>
+
+            <div class="form-group">
+                {{form.pay_4.label(class="form-control-label")}}
+                {{form.pay_4(class="form-control form-control-lg")}}
+            </div>
+            
+            <div class="form-group">
+                {{form.pay_5.label(class="form-control-label")}}
+                {{form.pay_5(class="form-control form-control-lg")}}
+            </div>
+            
+            <div class="form-group">
+                {{form.pay_6.label(class="form-control-label")}}
+                {{form.pay_6(class="form-control form-control-lg")}}
+            </div>
+            
+            <div class="form-group">
+                {{ form.bill_amt1.label(class="form-control-label") }}
+                {% if form.bill_amt1.errors %}
+                    {{ form.bill_amt1(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.bill_amt1.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.bill_amt1(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.bill_amt2.label(class="form-control-label") }}
+                {% if form.bill_amt2.errors %}
+                    {{ form.bill_amt2(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.bill_amt2.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.bill_amt2(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.bill_amt3.label(class="form-control-label") }}
+                {% if form.bill_amt3.errors %}
+                    {{ form.bill_amt3(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.bill_amt3.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.bill_amt3(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.bill_amt4.label(class="form-control-label") }}
+                {% if form.bill_amt4.errors %}
+                    {{ form.bill_amt4(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.bill_amt4.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.bill_amt4(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.bill_amt5.label(class="form-control-label") }}
+                {% if form.bill_amt5.errors %}
+                    {{ form.bill_amt5(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.bill_amt5.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.bill_amt5(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.bill_amt6.label(class="form-control-label") }}
+                {% if form.bill_amt6.errors %}
+                    {{ form.bill_amt6(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.bill_amt6.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.bill_amt6(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{ form.pay_amt1.label(class="form-control-label") }}
+                {% if form.pay_amt1.errors %}
+                    {{ form.pay_amt1(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.pay_amt1.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.pay_amt1(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.pay_amt2.label(class="form-control-label") }}
+                {% if form.pay_amt2.errors %}
+                    {{ form.pay_amt2(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.pay_amt2.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.pay_amt2(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.pay_amt3.label(class="form-control-label") }}
+                {% if form.pay_amt3.errors %}
+                    {{ form.pay_amt3(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.pay_amt3.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.pay_amt3(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.pay_amt4.label(class="form-control-label") }}
+                {% if form.pay_amt4.errors %}
+                    {{ form.pay_amt4(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.pay_amt4.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.pay_amt4(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.pay_amt5.label(class="form-control-label") }}
+                {% if form.pay_amt5.errors %}
+                    {{ form.pay_amt5(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.pay_amt5.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.pay_amt5(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.pay_amt6.label(class="form-control-label") }}
+                {% if form.pay_amt6.errors %}
+                    {{ form.pay_amt6(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.pay_amt6.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.pay_amt6(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+            
+        </fieldset>
+
+        <div class="form-group">
+            {{form.submit(class="btn btn-outline-info")}}
+        </div>
+</form>
+</div>
+        
+{% endblock content %}

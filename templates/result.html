@@ -1,0 +1,14 @@
+{% extends "layout2.html" %}
+{% block content %}
+    
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+            
+              <img src="{{url_for('static', filename=result.image_png)}}">
+            </div>
+            <h2><a class="article-title" href="#">{{ result.title }}</a></h2>
+          </div>
+        </article>
+    
+{% endblock content %}
